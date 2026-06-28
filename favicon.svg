@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff7a1;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="45%" style="stop-color:#c8860a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#b8730a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffbe0;stop-opacity:0.7" />
+      <stop offset="40%" style="stop-color:#ffd700;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="31" fill="url(#bgGrad)" stroke="#c8860a" stroke-width="1.5"/>
+
+  <!-- Outer gold ring glow -->
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- The R letterform - bold, centered -->
+  <g filter="url(#outerGlow)">
+    <!-- R path: vertical stem + bowl + leg -->
+    <path d="
+      M16 10
+      L16 54
+      L22 54
+      L22 36
+      L32 36
+      L42 54
+      L49 54
+      L38.5 35
+      C44 33 47 28.5 47 23
+      C47 15.5 41.5 10 34 10
+      Z
+      M22 16
+      L33 16
+      C38 16 41 19 41 23
+      C41 27.5 38 30.5 33 30.5
+      L22 30.5
+      Z
+    " fill="url(#goldGrad)" stroke="#c8860a" stroke-width="0.3"/>
+
+    <!-- Shimmer overlay on R -->
+    <path d="
+      M16 10
+      L16 54
+      L22 54
+      L22 36
+      L32 36
+      L42 54
+      L49 54
+      L38.5 35
+      C44 33 47 28.5 47 23
+      C47 15.5 41.5 10 34 10
+      Z
+      M22 16
+      L33 16
+      C38 16 41 19 41 23
+      C41 27.5 38 30.5 33 30.5
+      L22 30.5
+      Z
+    " fill="url(#shimmer)"/>
+  </g>
+
+  <!-- Corner sparkles -->
+  <g fill="#ffd700" opacity="0.9" filter="url(#glow)">
+    <!-- Top right sparkle -->
+    <polygon points="52,10 53.2,12.8 56,14 53.2,15.2 52,18 50.8,15.2 48,14 50.8,12.8" transform="scale(0.7) translate(28,0)"/>
+    <!-- Bottom left sparkle -->
+    <polygon points="12,48 13,50.2 15.2,51.2 13,52.2 12,54.4 11,52.2 8.8,51.2 11,50.2" transform="scale(0.5) translate(5,18)"/>
+    <!-- Top left small dot -->
+    <circle cx="10" cy="12" r="1.2" opacity="0.8"/>
+    <!-- Bottom right small dot -->
+    <circle cx="54" cy="52" r="1" opacity="0.6"/>
+  </g>
+</svg>

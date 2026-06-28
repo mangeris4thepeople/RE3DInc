@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Re3d Inc — Custom print-on-demand clothing. Design your own or shop thousands of independent artist creations. Ships worldwide.">
+  <meta name="keywords" content="Re3d Inc, custom t-shirts, print on demand, custom clothing, Re3dinc">
+  <meta property="og:title" content="Re3d Inc — Wear Your World">
+  <meta property="og:description" content="Custom t-shirts, hoodies, and more. Designed by you or discovered from thousands of independent artists.">
+  <meta property="og:url" content="https://re3dinc.com">
+  <title>Re3d Inc — Wear Your World</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PROMO BAR -->
+  <div class="promo-bar">
+    🔥 Summer Sale — <strong>20% off sitewide</strong> + free shipping over $40. Use code: <strong>RE3D20</strong>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Re3d<span>Inc</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#shop" class="active">Shop</a></li>
+        <li><a href="#studio">Design Studio</a></li>
+        <li><a href="#bestsellers">Bestsellers</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#sell">Sell Your Art</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" onclick="document.getElementById('register-modal').classList.add('open')">Log in</button>
+        <button class="btn btn-primary" onclick="document.getElementById('register-modal').classList.add('open')">Start designing</button>
+        <button class="cart-btn" aria-label="Cart">
+          🛒<span class="cart-count">2</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- REGISTER MODAL -->
+  <div class="modal-overlay" id="register-modal">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('register-modal').classList.remove('open')" aria-label="Close">&times;</button>
+      <div class="modal-logo">Re3d<span>Inc</span></div>
+      <h2 class="modal-title">Create your account</h2>
+      <p class="modal-sub">Join thousands of designers and shoppers on Re3d Inc.</p>
+      <form id="register-form" action="https://formsubmit.co/dustinreed591@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Re3d Inc Registration">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://re3dinc.com/thankyou.html">
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" name="name" placeholder="Dustin Reed" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" name="password" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+        <p class="modal-terms">By registering you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag">✦ Re3d Inc Summer 2026 Drop</div>
+        <h1 class="hero-title">Wear<br>Your<br><em>World.</em></h1>
+        <p class="hero-sub">Custom t-shirts, hoodies, and more — designed by you or discovered from thousands of independent artists. Printed on demand, shipped fast.</p>
+        <div class="hero-ctas">
+          <a href="#shop" class="btn btn-primary btn-lg">Browse the shop →</a>
+          <a href="#studio" class="btn btn-ghost btn-lg">Design your own</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-tshirt-stage">
+          <div class="hero-badge">New Drop ✦</div>
+          <svg class="hero-tshirt-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 40 L20 70 L40 85 L40 160 L160 160 L160 85 L180 70 L140 40 Q130 55 100 55 Q70 55 60 40Z" fill="#c8860a"/>
+            <path d="M60 40 Q70 55 100 55 Q130 55 140 40" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none"/>
+            <text x="100" y="108" text-anchor="middle" font-family="'Syne',sans-serif" font-weight="800" font-size="28" fill="#fff7a1" letter-spacing="-1">Re3d</text>
+            <text x="100" y="128" text-anchor="middle" font-family="'Syne',sans-serif" font-weight="800" font-size="14" fill="#ffd700" letter-spacing="1">INC</text>
+            <text x="100" y="145" text-anchor="middle" font-family="'Inter',sans-serif" font-weight="300" font-size="9" fill="rgba(255,255,255,0.5)" letter-spacing="4">RE3DINC.COM</text>
+          </svg>
+          <div class="hero-color-dots">
+            <div class="cdot active" style="background:#c8860a"></div>
+            <div class="cdot" style="background:#0f0f0f"></div>
+            <div class="cdot" style="background:#3a6b4a"></div>
+            <div class="cdot" style="background:#f7f6f2;border-color:rgba(255,255,255,0.5)"></div>
+            <div class="cdot" style="background:#2c5282"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY STRIP -->
+  <div class="cat-strip">
+    <div class="cat-strip-inner">
+      <div class="cat-item active">👕 T-Shirts</div>
+      <div class="cat-item">🧥 Hoodies</div>
+      <div class="cat-item">🧢 Hats &amp; Caps</div>
+      <div class="cat-item">👜 Tote Bags</div>
+      <div class="cat-item">☕ Mugs</div>
+      <div class="cat-item">🧦 Accessories</div>
+      <div class="cat-item">👶 Kids</div>
+      <div class="cat-item">🌱 Eco Range</div>
+    </div>
+  </div>
+
+  <!-- BESTSELLERS -->
+  <div class="section" id="bestsellers">
+    <div class="section-header">
+      <h2 class="section-title">Bestsellers this week</h2>
+      <a href="#shop" class="see-all">View all →</a>
+    </div>
+    <div class="product-grid" id="shop">
+
+      <div class="product-card">
+        <div class="product-thumb bg-sand">
+          <div class="product-new">New</div>
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🌞</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Sunny Days Retro Tee</div>
+          <div class="product-sub">Men's Premium T-Shirt · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$27.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#f5efe3"></div>
+              <div class="swatch" style="background:#e84c2b"></div>
+              <div class="swatch" style="background:#0f0f0f"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-blush">
+          <div class="product-sale">Sale</div>
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🌸</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Wildflower Cropped Hoodie</div>
+          <div class="product-sub">Women's Cropped Hoodie · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price"><span class="old">$49.99</span>$36.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#fde8e8"></div>
+              <div class="swatch" style="background:#f5c2c2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-moss">
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🏕️</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Trail &amp; Summit Graphic Tee</div>
+          <div class="product-sub">Unisex Organic Cotton · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$31.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#e1ede5"></div>
+              <div class="swatch" style="background:#3a6b4a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-navy">
+          <div class="product-new">New</div>
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>⚡</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Electric Bolt Ringer Tee</div>
+          <div class="product-sub">Men's Ringer T-Shirt · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$29.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#dde4f0"></div>
+              <div class="swatch" style="background:#0f0f0f"></div>
+              <div class="swatch" style="background:#e84c2b"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-cream">
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🍋</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Citrus Grove Tank</div>
+          <div class="product-sub">Women's Muscle Tank · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$24.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#fef9ed"></div>
+              <div class="swatch" style="background:#e8c84a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-lavender">
+          <div class="product-sale">Sale</div>
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🔮</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Midnight Mystic Crewneck</div>
+          <div class="product-sub">Unisex Crewneck · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price"><span class="old">$44.99</span>$33.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#ede9fb"></div>
+              <div class="swatch" style="background:#7c5cbf"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-peach">
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🌊</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Pacific Wave Summer Tee</div>
+          <div class="product-sub">Men's Premium T-Shirt · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$26.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#feeee5"></div>
+              <div class="swatch" style="background:#2c5282"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-thumb bg-slate">
+          <div class="product-eco">Eco</div>
+          <button class="product-wish" aria-label="Wishlist">♡</button>
+          <span>🌿</span>
+        </div>
+        <div class="product-body">
+          <div class="product-name">Forest Keeper Organic Tee</div>
+          <div class="product-sub">Unisex 100% Organic · Re3d Inc</div>
+          <div class="product-foot">
+            <div class="product-price">$34.99</div>
+            <div class="product-colors">
+              <div class="swatch" style="background:#e2e8f0"></div>
+              <div class="swatch" style="background:#3a6b4a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DESIGN STUDIO -->
+  <section class="studio-banner" id="studio">
+    <div class="studio-inner">
+      <div class="studio-text">
+        <span class="studio-eyebrow">✦ Re3d Inc Design Studio</span>
+        <h2 class="studio-title">Make it<br>100% yours.</h2>
+        <p class="studio-body">Upload your art, add your text, or start from a blank slate. Re3d Inc's drag-and-drop studio runs entirely in your browser — no software needed.</p>
+        <div class="studio-steps">
+          <div class="studio-step">
+            <div class="step-num">1</div>
+            <div class="step-text">
+              <strong>Pick your product</strong>
+              <span>250+ blanks — tees, hoodies, hats, mugs, totes</span>
+            </div>
+          </div>
+          <div class="studio-step">
+            <div class="step-num">2</div>
+            <div class="step-text">
+              <strong>Add your design</strong>
+              <span>Upload, type, or choose from 50,000+ free graphics</span>
+            </div>
+          </div>
+          <div class="studio-step">
+            <div class="step-num">3</div>
+            <div class="step-text">
+              <strong>We print and ship</strong>
+              <span>Delivered to your door in 5–9 business days</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="#" class="btn btn-primary btn-lg">Open Design Studio →</a>
+        </div>
+      </div>
+      <div class="studio-visual">
+        <div class="studio-mockup">
+          <div class="mockup-canvas">
+            <svg viewBox="0 0 180 180" width="160" xmlns="http://www.w3.org/2000/svg">
+              <rect width="180" height="180" fill="#f7f6f2" rx="8"/>
+              <path d="M50 50 L30 80 L50 90 L50 140 L130 140 L130 90 L150 80 L130 50 Q115 65 90 65 Q65 65 50 50Z" fill="#c8860a" opacity="0.9"/>
+              <rect x="68" y="88" width="44" height="32" rx="4" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-dasharray="3 2"/>
+              <text x="90" y="105" text-anchor="middle" font-size="10" fill="#fff7a1" font-weight="bold" font-family="'Syne',sans-serif">Re3d Inc</text>
+              <text x="90" y="116" text-anchor="middle" font-size="7" fill="rgba(255,255,255,0.6)" font-family="'Inter',sans-serif" letter-spacing="2">YOUR ART</text>
+              <polygon points="145,50 145,65 149,60 153,68 155,67 151,59 157,57" fill="#0f0f0f"/>
+            </svg>
+          </div>
+          <div class="mockup-label">RE3DINC.COM DESIGN STUDIO</div>
+          <div class="mockup-actions">
+            <button class="mockup-btn outline">Upload image</button>
+            <button class="mockup-btn solid">Add text</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <div class="section" id="categories">
+    <div class="section-header">
+      <h2 class="section-title">Shop by category</h2>
+      <a href="#" class="see-all">All categories →</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card big" style="background:#1a1a2e;">
+        <div class="cat-card-bg" style="font-size:120px;opacity:0.15;">👕</div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-label">
+          <div class="cat-card-name">T-Shirts</div>
+          <div class="cat-card-count">3,200+ designs</div>
+        </div>
+      </div>
+      <div class="cat-card" style="background:#2d1b0e;">
+        <div class="cat-card-bg" style="opacity:0.2;">🧥</div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-label">
+          <div class="cat-card-name">Hoodies</div>
+          <div class="cat-card-count">1,400+ designs</div>
+        </div>
+      </div>
+      <div class="cat-card" style="background:#0f2d1b;">
+        <div class="cat-card-bg" style="opacity:0.2;">🧢</div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-label">
+          <div class="cat-card-name">Hats &amp; Caps</div>
+          <div class="cat-card-count">620+ designs</div>
+        </div>
+      </div>
+      <div class="cat-card" style="background:#1e0f2d;">
+        <div class="cat-card-bg" style="opacity:0.2;">👜</div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-label">
+          <div class="cat-card-name">Tote Bags</div>
+          <div class="cat-card-count">880+ designs</div>
+        </div>
+      </div>
+      <div class="cat-card" style="background:#2d1a0a;">
+        <div class="cat-card-bg" style="opacity:0.2;">☕</div>
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-label">
+          <div class="cat-card-name">Mugs &amp; Drinkware</div>
+          <div class="cat-card-count">540+ designs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div>
+          <div class="trust-label">30-day returns</div>
+          <div class="trust-sub">No questions asked</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🚀</div>
+        <div>
+          <div class="trust-label">Ships in 48 hours</div>
+          <div class="trust-sub">Printed fresh on demand</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🌍</div>
+        <div>
+          <div class="trust-label">Worldwide delivery</div>
+          <div class="trust-sub">150+ countries</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🌱</div>
+        <div>
+          <div class="trust-label">Eco-friendly options</div>
+          <div class="trust-sub">Organic &amp; recycled blanks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER / REGISTER -->
+  <section class="newsletter" id="sell">
+    <div class="newsletter-inner">
+      <h2 class="newsletter-title">Join Re3d Inc</h2>
+      <p class="newsletter-sub">New drops, exclusive discounts, and featured artists — straight to your inbox. No spam, unsubscribe anytime.</p>
+      <form class="newsletter-form" action="https://formsubmit.co/dustinreed591@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Re3d Inc Newsletter Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://re3dinc.com/thankyou.html">
+        <input class="newsletter-input" type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-ink">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo footer-logo">Re3d<span>Inc</span></div>
+          <p>Custom clothing and print-on-demand, done right. Design your own or shop thousands of independent artist creations at Re3d Inc.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-btn" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Hats &amp; Caps</a></li>
+            <li><a href="#">Tote Bags</a></li>
+            <li><a href="#">Mugs</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Create</h4>
+          <ul>
+            <li><a href="#">Design Studio</a></li>
+            <li><a href="#">Upload Artwork</a></li>
+            <li><a href="#">Text &amp; Fonts</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Sell Your Art</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Your Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Re3d Inc — re3dinc.com. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Cookie Settings</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
